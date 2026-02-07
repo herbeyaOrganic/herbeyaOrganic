@@ -1,4 +1,4 @@
-// js/product.js
+aq// js/product.js
 document.addEventListener('DOMContentLoaded', () => {
     // Render products if container exists
     const grid = document.getElementById('products-grid');
@@ -49,7 +49,7 @@ function renderProducts(products) {
             <img src="${product.image}" alt="${product.title}" class="product-image" loading="lazy">
             <div class="product-info">
                 <h3 class="product-title">${product.title}</h3>
-                <div class="product-price">$${product.price.toFixed(2)}</div>
+                <div class="product-price">PKR ${product.price.toFixed(2)}</div>
             </div>
         </div>
     `).join('');
@@ -133,4 +133,5 @@ function openProductModal(product) {
 }
 
 // Make functions available for product cards
+
 window.openProductModal = openProductModal;
